@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: placement-management-system
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true
+      - key: REMINDERS_ENABLED
+        value: "false"

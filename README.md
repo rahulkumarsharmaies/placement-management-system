@@ -68,7 +68,9 @@ The scheduler checks every 15 minutes for interviews in the next 24 hours. Each 
 
 ## Free demo deployment (Render)
 
-The repository includes a Dockerfile and a Render Blueprint in `render.yaml`. To publish it, push this project to a GitHub repository, then in Render choose **New > Blueprint**, connect that repository, and deploy the Blueprint. Render will provide the public URL after the first successful deployment. The app uses Render's assigned `PORT` automatically.
+The repository includes a Dockerfile and a Render Blueprint in `render.yaml`. Use the button below to connect the GitHub repository and deploy the Blueprint; Render will provide the public URL after the first successful deployment. The app uses Render's assigned `PORT` automatically.
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/rahulkumarsharmaies/placement-management-system)
 
 This free demo uses the default in-memory H2 database and local document storage. Data and uploaded files are not durable across service restarts or redeployments, and the free web service may spin down when idle. Do not use it for real student records or other sensitive data. For persistent production use, configure a managed database and durable file storage.
 
